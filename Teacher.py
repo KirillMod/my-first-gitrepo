@@ -1,3 +1,8 @@
+from Human import Human
+from Class import Class
+from Subject import Subject
+from typing import List
+
 class Teacher(Human):
     _homeroom_class: Class | None
     _subjects: List[Subject]

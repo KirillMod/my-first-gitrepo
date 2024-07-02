@@ -1,3 +1,6 @@
+from Human import Human
+from Class import Class
+
 class Student(Human):
     _class: Class
 

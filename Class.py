@@ -1,10 +1,4 @@
-from Human import Human
-from Teacher import Teacher
-from Student import Student
-from Subject import Subject
-from enum import Enum
 from typing import List
-
 
 class Class(list):
     _grade: int
