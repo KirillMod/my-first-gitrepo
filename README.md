@@ -1,3 +1,3 @@
 # my-first-gitrepo
 
-Программа по установке школьного класса с классами "Teacher", "Student", "Human", "Subject" и "Class" 
+Программа по созданию школьного класса с классами "Teacher", "Student", "Human", "Subject" и "Class" 
