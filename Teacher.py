@@ -10,6 +10,7 @@ class Teacher(Human):
     def __init__(self, name: str, last_name: str, _subjects):
         super().__init__(name, last_name)
         self._subjects = _subjects
+        self._homeroom_class = None
 
     def set_class(self, new_class):
         self._homeroom_class = new_class
