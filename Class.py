@@ -21,6 +21,9 @@ class Class(list):
                              if name in student.name or name in student.last_name]
         return filtered_students
 
+    def sorted_students_by_lastname(self):
+        return sorted(self._students, key=lambda student: student.last_name)
+
     def add_student(self, student):
         self._students.append(student)
 

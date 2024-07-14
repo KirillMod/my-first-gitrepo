@@ -1,3 +1,4 @@
+import unittest
 from Teacher import Teacher
 from Student import Student
 from Subject import Subject
@@ -20,7 +21,21 @@ print("Список учеников по алфавиту:")
 for student in class_5a:
     print(f"{student.name} {student.last_name}")
 
+class TestClassSorting(unittest.TestCase):
+
+    def test_sorted_students_by_lastname(self):
+        sorted_students = class_5a.sorted_students_by_lastname()
+        sorted_lastnames = [student.last_name for student in sorted_students]
+        self.assertEqual(sorted_lastnames, ["Ежов", "Новиков", "Смирнов", "Петров"])
+
+if __name__ == "__main__":
+    unittest.main()
+
 print("Введите имя/фамилию ученика(ов):")
 students_found = class_5a[input()]
-for student in students_found:
-    print(student.name, student.last_name)
+if students_found:
+    print("Найденный(ые) ученик(и):")
+    for student in students_found:
+        print(student.name, student.last_name)
+else:
+    print("Ученика(ов) нет в списке")
