@@ -26,7 +26,7 @@ class TestClassSorting(unittest.TestCase):
     def test_sorted_students_by_lastname(self):
         sorted_students = class_5a.sorted_students_by_lastname()
         sorted_lastnames = [student.last_name for student in sorted_students]
-        self.assertEqual(sorted_lastnames, ["Ежов", "Новиков", "Смирнов", "Петров"])
+        self.assertEqual(sorted_lastnames, ["Ежов", "Новиков", "Смирнов", "Петров"]) # Выдаст ошибку - "Смирнов" <-> "Петров"
 
 if __name__ == "__main__":
     unittest.main()
